@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>cnn</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
+<title>cnn</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
 
 <style type="text/css">
     /*!
@@ -199,7 +204,6 @@ th {
   *:before,
   *:after {
     background: transparent !important;
-    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -6744,15 +6748,15 @@ button.close {
 *
 */
 /*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -6809,6 +6813,19 @@ button.close {
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
 .pull-right {
   float: right;
 }
@@ -6824,6 +6841,10 @@ button.close {
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
 }
 @-webkit-keyframes fa-spin {
   0% {
@@ -6846,31 +6867,31 @@ button.close {
   }
 }
 .fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
@@ -7355,6 +7376,7 @@ button.close {
 .fa-twitter:before {
   content: "\f099";
 }
+.fa-facebook-f:before,
 .fa-facebook:before {
   content: "\f09a";
 }
@@ -7367,6 +7389,7 @@ button.close {
 .fa-credit-card:before {
   content: "\f09d";
 }
+.fa-feed:before,
 .fa-rss:before {
   content: "\f09e";
 }
@@ -8004,7 +8027,8 @@ button.close {
 .fa-male:before {
   content: "\f183";
 }
-.fa-gittip:before {
+.fa-gittip:before,
+.fa-gratipay:before {
   content: "\f184";
 }
 .fa-sun-o:before {
@@ -8108,7 +8132,7 @@ button.close {
 .fa-digg:before {
   content: "\f1a6";
 }
-.fa-pied-piper:before {
+.fa-pied-piper-pp:before {
   content: "\f1a7";
 }
 .fa-pied-piper-alt:before {
@@ -8234,6 +8258,7 @@ button.close {
   content: "\f1ce";
 }
 .fa-ra:before,
+.fa-resistance:before,
 .fa-rebel:before {
   content: "\f1d0";
 }
@@ -8247,6 +8272,8 @@ button.close {
 .fa-git:before {
   content: "\f1d3";
 }
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
 .fa-hacker-news:before {
   content: "\f1d4";
 }
@@ -8414,6 +8441,657 @@ button.close {
 }
 .fa-meanpath:before {
   content: "\f20c";
+}
+.fa-buysellads:before {
+  content: "\f20d";
+}
+.fa-connectdevelop:before {
+  content: "\f20e";
+}
+.fa-dashcube:before {
+  content: "\f210";
+}
+.fa-forumbee:before {
+  content: "\f211";
+}
+.fa-leanpub:before {
+  content: "\f212";
+}
+.fa-sellsy:before {
+  content: "\f213";
+}
+.fa-shirtsinbulk:before {
+  content: "\f214";
+}
+.fa-simplybuilt:before {
+  content: "\f215";
+}
+.fa-skyatlas:before {
+  content: "\f216";
+}
+.fa-cart-plus:before {
+  content: "\f217";
+}
+.fa-cart-arrow-down:before {
+  content: "\f218";
+}
+.fa-diamond:before {
+  content: "\f219";
+}
+.fa-ship:before {
+  content: "\f21a";
+}
+.fa-user-secret:before {
+  content: "\f21b";
+}
+.fa-motorcycle:before {
+  content: "\f21c";
+}
+.fa-street-view:before {
+  content: "\f21d";
+}
+.fa-heartbeat:before {
+  content: "\f21e";
+}
+.fa-venus:before {
+  content: "\f221";
+}
+.fa-mars:before {
+  content: "\f222";
+}
+.fa-mercury:before {
+  content: "\f223";
+}
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "\f224";
+}
+.fa-transgender-alt:before {
+  content: "\f225";
+}
+.fa-venus-double:before {
+  content: "\f226";
+}
+.fa-mars-double:before {
+  content: "\f227";
+}
+.fa-venus-mars:before {
+  content: "\f228";
+}
+.fa-mars-stroke:before {
+  content: "\f229";
+}
+.fa-mars-stroke-v:before {
+  content: "\f22a";
+}
+.fa-mars-stroke-h:before {
+  content: "\f22b";
+}
+.fa-neuter:before {
+  content: "\f22c";
+}
+.fa-genderless:before {
+  content: "\f22d";
+}
+.fa-facebook-official:before {
+  content: "\f230";
+}
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+.fa-whatsapp:before {
+  content: "\f232";
+}
+.fa-server:before {
+  content: "\f233";
+}
+.fa-user-plus:before {
+  content: "\f234";
+}
+.fa-user-times:before {
+  content: "\f235";
+}
+.fa-hotel:before,
+.fa-bed:before {
+  content: "\f236";
+}
+.fa-viacoin:before {
+  content: "\f237";
+}
+.fa-train:before {
+  content: "\f238";
+}
+.fa-subway:before {
+  content: "\f239";
+}
+.fa-medium:before {
+  content: "\f23a";
+}
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "\f23b";
+}
+.fa-optin-monster:before {
+  content: "\f23c";
+}
+.fa-opencart:before {
+  content: "\f23d";
+}
+.fa-expeditedssl:before {
+  content: "\f23e";
+}
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+  content: "\f240";
+}
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "\f241";
+}
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "\f242";
+}
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "\f243";
+}
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "\f244";
+}
+.fa-mouse-pointer:before {
+  content: "\f245";
+}
+.fa-i-cursor:before {
+  content: "\f246";
+}
+.fa-object-group:before {
+  content: "\f247";
+}
+.fa-object-ungroup:before {
+  content: "\f248";
+}
+.fa-sticky-note:before {
+  content: "\f249";
+}
+.fa-sticky-note-o:before {
+  content: "\f24a";
+}
+.fa-cc-jcb:before {
+  content: "\f24b";
+}
+.fa-cc-diners-club:before {
+  content: "\f24c";
+}
+.fa-clone:before {
+  content: "\f24d";
+}
+.fa-balance-scale:before {
+  content: "\f24e";
+}
+.fa-hourglass-o:before {
+  content: "\f250";
+}
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "\f251";
+}
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "\f252";
+}
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "\f253";
+}
+.fa-hourglass:before {
+  content: "\f254";
+}
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "\f255";
+}
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "\f256";
+}
+.fa-hand-scissors-o:before {
+  content: "\f257";
+}
+.fa-hand-lizard-o:before {
+  content: "\f258";
+}
+.fa-hand-spock-o:before {
+  content: "\f259";
+}
+.fa-hand-pointer-o:before {
+  content: "\f25a";
+}
+.fa-hand-peace-o:before {
+  content: "\f25b";
+}
+.fa-trademark:before {
+  content: "\f25c";
+}
+.fa-registered:before {
+  content: "\f25d";
+}
+.fa-creative-commons:before {
+  content: "\f25e";
+}
+.fa-gg:before {
+  content: "\f260";
+}
+.fa-gg-circle:before {
+  content: "\f261";
+}
+.fa-tripadvisor:before {
+  content: "\f262";
+}
+.fa-odnoklassniki:before {
+  content: "\f263";
+}
+.fa-odnoklassniki-square:before {
+  content: "\f264";
+}
+.fa-get-pocket:before {
+  content: "\f265";
+}
+.fa-wikipedia-w:before {
+  content: "\f266";
+}
+.fa-safari:before {
+  content: "\f267";
+}
+.fa-chrome:before {
+  content: "\f268";
+}
+.fa-firefox:before {
+  content: "\f269";
+}
+.fa-opera:before {
+  content: "\f26a";
+}
+.fa-internet-explorer:before {
+  content: "\f26b";
+}
+.fa-tv:before,
+.fa-television:before {
+  content: "\f26c";
+}
+.fa-contao:before {
+  content: "\f26d";
+}
+.fa-500px:before {
+  content: "\f26e";
+}
+.fa-amazon:before {
+  content: "\f270";
+}
+.fa-calendar-plus-o:before {
+  content: "\f271";
+}
+.fa-calendar-minus-o:before {
+  content: "\f272";
+}
+.fa-calendar-times-o:before {
+  content: "\f273";
+}
+.fa-calendar-check-o:before {
+  content: "\f274";
+}
+.fa-industry:before {
+  content: "\f275";
+}
+.fa-map-pin:before {
+  content: "\f276";
+}
+.fa-map-signs:before {
+  content: "\f277";
+}
+.fa-map-o:before {
+  content: "\f278";
+}
+.fa-map:before {
+  content: "\f279";
+}
+.fa-commenting:before {
+  content: "\f27a";
+}
+.fa-commenting-o:before {
+  content: "\f27b";
+}
+.fa-houzz:before {
+  content: "\f27c";
+}
+.fa-vimeo:before {
+  content: "\f27d";
+}
+.fa-black-tie:before {
+  content: "\f27e";
+}
+.fa-fonticons:before {
+  content: "\f280";
+}
+.fa-reddit-alien:before {
+  content: "\f281";
+}
+.fa-edge:before {
+  content: "\f282";
+}
+.fa-credit-card-alt:before {
+  content: "\f283";
+}
+.fa-codiepie:before {
+  content: "\f284";
+}
+.fa-modx:before {
+  content: "\f285";
+}
+.fa-fort-awesome:before {
+  content: "\f286";
+}
+.fa-usb:before {
+  content: "\f287";
+}
+.fa-product-hunt:before {
+  content: "\f288";
+}
+.fa-mixcloud:before {
+  content: "\f289";
+}
+.fa-scribd:before {
+  content: "\f28a";
+}
+.fa-pause-circle:before {
+  content: "\f28b";
+}
+.fa-pause-circle-o:before {
+  content: "\f28c";
+}
+.fa-stop-circle:before {
+  content: "\f28d";
+}
+.fa-stop-circle-o:before {
+  content: "\f28e";
+}
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+.fa-shopping-basket:before {
+  content: "\f291";
+}
+.fa-hashtag:before {
+  content: "\f292";
+}
+.fa-bluetooth:before {
+  content: "\f293";
+}
+.fa-bluetooth-b:before {
+  content: "\f294";
+}
+.fa-percent:before {
+  content: "\f295";
+}
+.fa-gitlab:before {
+  content: "\f296";
+}
+.fa-wpbeginner:before {
+  content: "\f297";
+}
+.fa-wpforms:before {
+  content: "\f298";
+}
+.fa-envira:before {
+  content: "\f299";
+}
+.fa-universal-access:before {
+  content: "\f29a";
+}
+.fa-wheelchair-alt:before {
+  content: "\f29b";
+}
+.fa-question-circle-o:before {
+  content: "\f29c";
+}
+.fa-blind:before {
+  content: "\f29d";
+}
+.fa-audio-description:before {
+  content: "\f29e";
+}
+.fa-volume-control-phone:before {
+  content: "\f2a0";
+}
+.fa-braille:before {
+  content: "\f2a1";
+}
+.fa-assistive-listening-systems:before {
+  content: "\f2a2";
+}
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "\f2a3";
+}
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "\f2a4";
+}
+.fa-glide:before {
+  content: "\f2a5";
+}
+.fa-glide-g:before {
+  content: "\f2a6";
+}
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "\f2a7";
+}
+.fa-low-vision:before {
+  content: "\f2a8";
+}
+.fa-viadeo:before {
+  content: "\f2a9";
+}
+.fa-viadeo-square:before {
+  content: "\f2aa";
+}
+.fa-snapchat:before {
+  content: "\f2ab";
+}
+.fa-snapchat-ghost:before {
+  content: "\f2ac";
+}
+.fa-snapchat-square:before {
+  content: "\f2ad";
+}
+.fa-pied-piper:before {
+  content: "\f2ae";
+}
+.fa-first-order:before {
+  content: "\f2b0";
+}
+.fa-yoast:before {
+  content: "\f2b1";
+}
+.fa-themeisle:before {
+  content: "\f2b2";
+}
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "\f2b3";
+}
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "\f2b4";
+}
+.fa-handshake-o:before {
+  content: "\f2b5";
+}
+.fa-envelope-open:before {
+  content: "\f2b6";
+}
+.fa-envelope-open-o:before {
+  content: "\f2b7";
+}
+.fa-linode:before {
+  content: "\f2b8";
+}
+.fa-address-book:before {
+  content: "\f2b9";
+}
+.fa-address-book-o:before {
+  content: "\f2ba";
+}
+.fa-vcard:before,
+.fa-address-card:before {
+  content: "\f2bb";
+}
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: "\f2bc";
+}
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+.fa-user-circle-o:before {
+  content: "\f2be";
+}
+.fa-user-o:before {
+  content: "\f2c0";
+}
+.fa-id-badge:before {
+  content: "\f2c1";
+}
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: "\f2c2";
+}
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: "\f2c3";
+}
+.fa-quora:before {
+  content: "\f2c4";
+}
+.fa-free-code-camp:before {
+  content: "\f2c5";
+}
+.fa-telegram:before {
+  content: "\f2c6";
+}
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: "\f2c7";
+}
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: "\f2c8";
+}
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: "\f2c9";
+}
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: "\f2ca";
+}
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: "\f2cb";
+}
+.fa-shower:before {
+  content: "\f2cc";
+}
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: "\f2cd";
+}
+.fa-podcast:before {
+  content: "\f2ce";
+}
+.fa-window-maximize:before {
+  content: "\f2d0";
+}
+.fa-window-minimize:before {
+  content: "\f2d1";
+}
+.fa-window-restore:before {
+  content: "\f2d2";
+}
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: "\f2d3";
+}
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: "\f2d4";
+}
+.fa-bandcamp:before {
+  content: "\f2d5";
+}
+.fa-grav:before {
+  content: "\f2d6";
+}
+.fa-etsy:before {
+  content: "\f2d7";
+}
+.fa-imdb:before {
+  content: "\f2d8";
+}
+.fa-ravelry:before {
+  content: "\f2d9";
+}
+.fa-eercast:before {
+  content: "\f2da";
+}
+.fa-microchip:before {
+  content: "\f2db";
+}
+.fa-snowflake-o:before {
+  content: "\f2dc";
+}
+.fa-superpowers:before {
+  content: "\f2dd";
+}
+.fa-wpexplorer:before {
+  content: "\f2de";
+}
+.fa-meetup:before {
+  content: "\f2e0";
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }
 /*!
 *
@@ -8694,6 +9372,10 @@ div.traceback-wrapper {
   max-width: 800px;
   margin: auto;
 }
+div.traceback-wrapper pre.traceback {
+  max-height: 600px;
+  overflow: auto;
+}
 /**
  * Primary styles
  *
@@ -8719,6 +9401,10 @@ body > #header {
   z-index: 100;
 }
 body > #header #header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
   padding-bottom: 5px;
   padding-top: 5px;
   box-sizing: border-box;
@@ -8750,13 +9436,16 @@ body > #header .header-bar {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-@media (max-width: 991px) {
-  #ipython_notebook {
-    margin-left: 10px;
-  }
-}
 [dir="rtl"] #ipython_notebook {
+  margin-right: 10px;
+  margin-left: 0;
+}
+[dir="rtl"] #ipython_notebook.pull-left {
   float: right !important;
+  float: right;
+}
+.flex-spacer {
+  flex: 1;
 }
 #noscript {
   width: auto;
@@ -8791,8 +9480,14 @@ body > #header .header-bar {
 input.ui-button {
   padding: 0.3em 0.9em;
 }
+span#kernel_logo_widget {
+  margin: 0 10px;
+}
 span#login_widget {
   float: right;
+}
+[dir="rtl"] span#login_widget {
+  float: left;
 }
 span#login_widget > .button,
 #logout {
@@ -8908,6 +9603,9 @@ span#login_widget > .button .badge,
   overflow: auto;
   flex: 1;
 }
+.modal-header {
+  cursor: move;
+}
 @media (min-width: 768px) {
   .modal .modal-dialog {
     width: 700px;
@@ -8928,6 +9626,19 @@ span#login_widget > .button .badge,
   display: inline-block;
   margin-bottom: -4px;
 }
+[dir="rtl"] .center-nav form.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] .center-nav .navbar-text {
+  float: right;
+}
+[dir="rtl"] .navbar-inner {
+  text-align: right;
+}
+[dir="rtl"] div.text-left {
+  text-align: right;
+}
 /*!
 *
 * IPython tree view
@@ -8944,34 +9655,42 @@ span#login_widget > .button .badge,
   margin: 0;
 }
 .alternate_upload input.fileinput {
-  text-align: center;
-  vertical-align: middle;
-  display: inline;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
   opacity: 0;
   z-index: 2;
-  width: 12ex;
-  margin-right: -12ex;
+}
+.alternate_upload .btn-xs > input.fileinput {
+  margin: -1px -5px;
 }
 .alternate_upload .btn-upload {
+  position: relative;
   height: 22px;
+}
+::-webkit-file-upload-button {
+  cursor: pointer;
 }
 /**
  * Primary styles
  *
  * Author: Jupyter Development Team
  */
-[dir="rtl"] #tabs li {
-  float: right;
-}
 ul#tabs {
   margin-bottom: 4px;
-}
-[dir="rtl"] ul#tabs {
-  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
   padding-bottom: 4px;
+}
+[dir="rtl"] ul#tabs.nav-tabs > li {
+  float: right;
+}
+[dir="rtl"] ul#tabs.nav.nav-tabs {
+  padding-right: 0;
 }
 ul.breadcrumb a:focus,
 ul.breadcrumb a:hover {
@@ -8991,15 +9710,13 @@ ul.breadcrumb span {
 .list_toolbar .tree-buttons {
   padding-top: 1px;
 }
-[dir="rtl"] .list_toolbar .tree-buttons {
+[dir="rtl"] .list_toolbar .tree-buttons .pull-right {
   float: left !important;
+  float: left;
 }
-[dir="rtl"] .list_toolbar .pull-right {
-  padding-top: 1px;
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-left {
-  float: right !important;
+[dir="rtl"] .list_toolbar .col-sm-4,
+[dir="rtl"] .list_toolbar .col-sm-8 {
+  float: right;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9055,7 +9772,7 @@ ul.breadcrumb span {
 .list_item > div input {
   margin-right: 7px;
   margin-left: 14px;
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   line-height: 22px;
   position: relative;
   top: -1px;
@@ -9065,6 +9782,9 @@ ul.breadcrumb span {
   margin-left: -1px;
   vertical-align: baseline;
   line-height: 22px;
+}
+[dir="rtl"] .list_item > div input {
+  margin-right: 0;
 }
 .new-file input[type=checkbox] {
   visibility: hidden;
@@ -9080,6 +9800,14 @@ ul.breadcrumb span {
   margin-left: 7px;
   line-height: 22px;
   vertical-align: baseline;
+}
+.item_modified {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+[dir="rtl"] .item_modified.pull-right {
+  float: left !important;
+  float: left;
 }
 .item_buttons {
   line-height: 1em;
@@ -9108,6 +9836,14 @@ ul.breadcrumb span {
   margin-right: 7px;
   float: left;
 }
+[dir="rtl"] .item_buttons.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .item_buttons .kernel-name {
+  margin-left: 7px;
+  float: right;
+}
 .toolbar_info {
   height: 24px;
   line-height: 24px;
@@ -9133,18 +9869,32 @@ ul.breadcrumb span {
   background-color: transparent;
   font-weight: bold;
 }
+.sort_button {
+  display: inline-block;
+  padding-left: 7px;
+}
+[dir="rtl"] .sort_button.pull-right {
+  float: left !important;
+  float: left;
+}
 #tree-selector {
   padding-right: 0px;
-}
-[dir="rtl"] #tree-selector a {
-  float: right;
 }
 #button-select-all {
   min-width: 50px;
 }
+[dir="rtl"] #button-select-all.btn {
+  float: right ;
+}
 #select-all {
   margin-left: 7px;
   margin-right: 2px;
+  margin-top: 2px;
+  height: 16px;
+}
+[dir="rtl"] #select-all.pull-left {
+  float: right !important;
+  float: right;
 }
 .menu_icon {
   margin-right: 2px;
@@ -9162,6 +9912,12 @@ ul.breadcrumb span {
   -moz-osx-font-smoothing: grayscale;
   content: "\f114";
 }
+.folder_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.folder_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .folder_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9178,6 +9934,12 @@ ul.breadcrumb span {
   content: "\f02d";
   position: relative;
   top: -1px;
+}
+.notebook_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.notebook_icon:before.fa-pull-right {
+  margin-left: .3em;
 }
 .notebook_icon:before.pull-left {
   margin-right: .3em;
@@ -9197,6 +9959,12 @@ ul.breadcrumb span {
   top: -1px;
   color: #5cb85c;
 }
+.running_notebook_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.running_notebook_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .running_notebook_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9214,6 +9982,12 @@ ul.breadcrumb span {
   position: relative;
   top: -2px;
 }
+.file_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.file_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .file_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9228,8 +10002,11 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
-[dir="rtl"] #new-menu {
-  text-align: right;
+#new-menu .dropdown-header {
+  font-size: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 3px;
+  margin: -3px 20px 0;
 }
 .kernel-menu-icon {
   padding-right: 12px;
@@ -9276,9 +10053,6 @@ ul#new-menu {
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
 }
-[dir="rtl"] #running .col-sm-8 {
-  float: right !important;
-}
 .delete-button {
   display: none;
 }
@@ -9286,6 +10060,12 @@ ul#new-menu {
   display: none;
 }
 .rename-button {
+  display: none;
+}
+.move-button {
+  display: none;
+}
+.download-button {
   display: none;
 }
 .shutdown-button {
@@ -9328,6 +10108,12 @@ ul#new-menu {
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
 }
+.dirty-indicator.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator.fa-pull-right {
+  margin-left: .3em;
+}
 .dirty-indicator.pull-left {
   margin-right: .3em;
 }
@@ -9342,6 +10128,12 @@ ul#new-menu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
+}
+.dirty-indicator-dirty.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator-dirty.fa-pull-right {
+  margin-left: .3em;
 }
 .dirty-indicator-dirty.pull-left {
   margin-right: .3em;
@@ -9358,6 +10150,12 @@ ul#new-menu {
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
 }
+.dirty-indicator-clean.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator-clean.fa-pull-right {
+  margin-left: .3em;
+}
 .dirty-indicator-clean.pull-left {
   margin-right: .3em;
 }
@@ -9372,6 +10170,12 @@ ul#new-menu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f00c";
+}
+.dirty-indicator-clean:before.fa-pull-left {
+  margin-right: .3em;
+}
+.dirty-indicator-clean:before.fa-pull-right {
+  margin-left: .3em;
 }
 .dirty-indicator-clean:before.pull-left {
   margin-right: .3em;
@@ -9417,14 +10221,132 @@ ul#new-menu {
     box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
   }
 }
+.CodeMirror-dialog {
+  background-color: #fff;
+}
 /*!
 *
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI colors. */
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.ansi-black-fg {
+  color: #3E424D;
+}
+.ansi-black-bg {
+  background-color: #3E424D;
+}
+.ansi-black-intense-fg {
+  color: #282C36;
+}
+.ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.ansi-red-fg {
+  color: #E75C58;
+}
+.ansi-red-bg {
+  background-color: #E75C58;
+}
+.ansi-red-intense-fg {
+  color: #B22B31;
+}
+.ansi-red-intense-bg {
+  background-color: #B22B31;
+}
+.ansi-green-fg {
+  color: #00A250;
+}
+.ansi-green-bg {
+  background-color: #00A250;
+}
+.ansi-green-intense-fg {
+  color: #007427;
+}
+.ansi-green-intense-bg {
+  background-color: #007427;
+}
+.ansi-yellow-fg {
+  color: #DDB62B;
+}
+.ansi-yellow-bg {
+  background-color: #DDB62B;
+}
+.ansi-yellow-intense-fg {
+  color: #B27D12;
+}
+.ansi-yellow-intense-bg {
+  background-color: #B27D12;
+}
+.ansi-blue-fg {
+  color: #208FFB;
+}
+.ansi-blue-bg {
+  background-color: #208FFB;
+}
+.ansi-blue-intense-fg {
+  color: #0065CA;
+}
+.ansi-blue-intense-bg {
+  background-color: #0065CA;
+}
+.ansi-magenta-fg {
+  color: #D160C4;
+}
+.ansi-magenta-bg {
+  background-color: #D160C4;
+}
+.ansi-magenta-intense-fg {
+  color: #A03196;
+}
+.ansi-magenta-intense-bg {
+  background-color: #A03196;
+}
+.ansi-cyan-fg {
+  color: #60C6C8;
+}
+.ansi-cyan-bg {
+  background-color: #60C6C8;
+}
+.ansi-cyan-intense-fg {
+  color: #258F8F;
+}
+.ansi-cyan-intense-bg {
+  background-color: #258F8F;
+}
+.ansi-white-fg {
+  color: #C5C1B4;
+}
+.ansi-white-bg {
+  background-color: #C5C1B4;
+}
+.ansi-white-intense-fg {
+  color: #A1A6B2;
+}
+.ansi-white-intense-bg {
+  background-color: #A1A6B2;
+}
+.ansi-default-inverse-fg {
+  color: #FFFFFF;
+}
+.ansi-default-inverse-bg {
+  background-color: #000000;
+}
+.ansi-bold {
+  font-weight: bold;
+}
+.ansi-underline {
+  text-decoration: underline;
+}
+/* The following styles are deprecated an will be removed in a future version */
 .ansibold {
   font-weight: bold;
+}
+.ansi-inverse {
+  outline: 0.5px dotted;
 }
 /* use dark versions for foreground, to improve visibility */
 .ansiblack {
@@ -9503,12 +10425,20 @@ div.cell {
   /* This acts as a spacer between cells, that is outside the border */
   margin: 0px;
   outline: none;
-  border-left-width: 1px;
-  padding-left: 5px;
-  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
+  position: relative;
+  overflow: visible;
+}
+div.cell:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: transparent;
 }
 div.cell.jupyter-soft-selected {
-  border-left-color: #90CAF9;
   border-left-color: #E3F2FD;
   border-left-width: 1px;
   padding-left: 5px;
@@ -9521,27 +10451,39 @@ div.cell.jupyter-soft-selected {
     border-color: transparent;
   }
 }
-div.cell.selected {
+div.cell.selected,
+div.cell.selected.jupyter-soft-selected {
   border-color: #ababab;
-  border-left-width: 0px;
-  padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
+}
+div.cell.selected:before,
+div.cell.selected.jupyter-soft-selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #42A5F5;
 }
 @media print {
-  div.cell.selected {
+  div.cell.selected,
+  div.cell.selected.jupyter-soft-selected {
     border-color: transparent;
   }
 }
-div.cell.selected.jupyter-soft-selected {
-  border-left-width: 0;
-  padding-left: 6px;
-  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
-}
 .edit_mode div.cell.selected {
   border-color: #66BB6A;
-  border-left-width: 0px;
-  padding-left: 6px;
-  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
+}
+.edit_mode div.cell.selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #66BB6A;
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -9737,7 +10679,9 @@ div.input_area > div.highlight > pre {
 .CodeMirror-lines {
   /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
-  padding: 0.4em;
+  /* Note that this should set vertical padding only, since CodeMirror assumes
+       that horizontal padding will be set on CodeMirror pre */
+  padding: 0.4em 0;
 }
 .CodeMirror-linenumber {
   padding: 0 8px 0 4px;
@@ -9747,11 +10691,24 @@ div.input_area > div.highlight > pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
-  /* .CodeMirror-lines */
-  padding: 0;
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+    use .CodeMirror-lines for vertical */
+  padding: 0 0.4em;
   border: 0;
   border-radius: 0;
+}
+.CodeMirror-cursor {
+  border-left: 1.4px solid black;
+}
+@media screen and (min-width: 2138px) and (max-width: 4319px) {
+  .CodeMirror-cursor {
+    border-left: 2px solid black;
+  }
+}
+@media screen and (min-width: 4320px) {
+  .CodeMirror-cursor {
+    border-left: 4px solid black;
+  }
 }
 /*
 
@@ -10005,6 +10962,9 @@ div.output_area img.unconfined,
 div.output_area svg.unconfined {
   max-width: none;
 }
+div.output_area .mglyph > img {
+  max-width: none;
+}
 /* This is needed to protect the pre formating from global settings such
    as that of bootstrap */
 .output {
@@ -10043,7 +11003,7 @@ div.output_area svg.unconfined {
 }
 div.output_area pre {
   margin: 0;
-  padding: 0;
+  padding: 1px 0 1px 0;
   border: 0;
   vertical-align: baseline;
   color: black;
@@ -10203,39 +11163,35 @@ div.output_unrecognized a:hover {
 .rendered_html h6:first-child {
   margin-top: 1em;
 }
+.rendered_html ul:not(.list-inline),
+.rendered_html ol:not(.list-inline) {
+  padding-left: 2em;
+}
 .rendered_html ul {
   list-style: disc;
-  margin: 0em 2em;
-  padding-left: 0px;
 }
 .rendered_html ul ul {
   list-style: square;
-  margin: 0em 2em;
+  margin-top: 0;
 }
 .rendered_html ul ul ul {
   list-style: circle;
-  margin: 0em 2em;
 }
 .rendered_html ol {
   list-style: decimal;
-  margin: 0em 2em;
-  padding-left: 0px;
 }
 .rendered_html ol ol {
   list-style: upper-alpha;
-  margin: 0em 2em;
+  margin-top: 0;
 }
 .rendered_html ol ol ol {
   list-style: lower-alpha;
-  margin: 0em 2em;
 }
 .rendered_html ol ol ol ol {
   list-style: lower-roman;
-  margin: 0em 2em;
 }
 .rendered_html ol ol ol ol ol {
   list-style: decimal;
-  margin: 0em 2em;
 }
 .rendered_html * + ul {
   margin-top: 1em;
@@ -10249,14 +11205,23 @@ div.output_unrecognized a:hover {
 }
 .rendered_html pre {
   margin: 1em 2em;
+  padding: 0px;
+  background-color: #fff;
+}
+.rendered_html code {
+  background-color: #eff0f1;
+}
+.rendered_html p code {
+  padding: 1px 5px;
+}
+.rendered_html pre code {
+  background-color: #fff;
 }
 .rendered_html pre,
 .rendered_html code {
   border: 0;
-  background-color: #fff;
   color: #000;
   font-size: 100%;
-  padding: 0px;
 }
 .rendered_html blockquote {
   margin: 1em 2em;
@@ -10264,24 +11229,36 @@ div.output_unrecognized a:hover {
 .rendered_html table {
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  border: none;
   border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
 }
 .rendered_html tr,
 .rendered_html th,
 .rendered_html td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin: 1em 2em;
-}
-.rendered_html td,
-.rendered_html th {
-  text-align: left;
+  text-align: right;
   vertical-align: middle;
-  padding: 4px;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
 }
 .rendered_html th {
   font-weight: bold;
+}
+.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
 }
 .rendered_html * + table {
   margin-top: 1em;
@@ -10308,6 +11285,15 @@ div.output_unrecognized a:hover {
 .rendered_html img.unconfined,
 .rendered_html svg.unconfined {
   max-width: none;
+}
+.rendered_html .alert {
+  margin-bottom: initial;
+}
+.rendered_html * + .alert {
+  margin-top: 1em;
+}
+[dir="rtl"] .rendered_html p {
+  text-align: right;
 }
 div.text_cell {
   /* Old browsers */
@@ -10362,8 +11348,17 @@ h6:hover .anchor-link {
   overflow-x: auto;
   overflow-y: hidden;
 }
+.text_cell.rendered .rendered_html tr,
+.text_cell.rendered .rendered_html th,
+.text_cell.rendered .rendered_html td {
+  max-width: none;
+}
 .text_cell.unrendered .text_cell_render {
   display: none;
+}
+.text_cell .dropzone .input_area {
+  border: 2px dashed #bababa;
+  margin: -1px;
 }
 .cm-header-1,
 .cm-header-2,
@@ -10500,6 +11495,28 @@ kbd {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+.jupyter-keybindings {
+  padding: 1px;
+  line-height: 24px;
+  border-bottom: 1px solid gray;
+}
+.jupyter-keybindings input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.jupyter-keybindings i {
+  padding: 6px;
+}
+.well code {
+  background-color: #ffffff;
+  border-color: #ababab;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 /* CSS for the cell toolbar */
 .celltoolbar {
   border: thin solid #CFCFCF;
@@ -10632,6 +11649,152 @@ select[multiple].celltoolbar select {
   margin-left: 5px;
   margin-right: 5px;
 }
+.tags_button_container {
+  width: 100%;
+  display: flex;
+}
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+.tag-container > * {
+  margin: 0 4px;
+}
+.remove-tag-btn {
+  margin-left: 4px;
+}
+.tags-input {
+  display: flex;
+}
+.cell-tag:last-child:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  /* Fade to background color of cell toolbar */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #EEE);
+}
+.tags-input > * {
+  margin-left: 4px;
+}
+.cell-tag,
+.tags-input input,
+.tags-input button {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+  box-shadow: none;
+  width: inherit;
+  font-size: inherit;
+  height: 22px;
+  line-height: 22px;
+  padding: 0px 4px;
+  display: inline-block;
+}
+.cell-tag:focus,
+.tags-input input:focus,
+.tags-input button:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.cell-tag::-moz-placeholder,
+.tags-input input::-moz-placeholder,
+.tags-input button::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.cell-tag:-ms-input-placeholder,
+.tags-input input:-ms-input-placeholder,
+.tags-input button:-ms-input-placeholder {
+  color: #999;
+}
+.cell-tag::-webkit-input-placeholder,
+.tags-input input::-webkit-input-placeholder,
+.tags-input button::-webkit-input-placeholder {
+  color: #999;
+}
+.cell-tag::-ms-expand,
+.tags-input input::-ms-expand,
+.tags-input button::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.cell-tag[disabled],
+.tags-input input[disabled],
+.tags-input button[disabled],
+.cell-tag[readonly],
+.tags-input input[readonly],
+.tags-input button[readonly],
+fieldset[disabled] .cell-tag,
+fieldset[disabled] .tags-input input,
+fieldset[disabled] .tags-input button {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.cell-tag[disabled],
+.tags-input input[disabled],
+.tags-input button[disabled],
+fieldset[disabled] .cell-tag,
+fieldset[disabled] .tags-input input,
+fieldset[disabled] .tags-input button {
+  cursor: not-allowed;
+}
+textarea.cell-tag,
+textarea.tags-input input,
+textarea.tags-input button {
+  height: auto;
+}
+select.cell-tag,
+select.tags-input input,
+select.tags-input button {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.cell-tag,
+textarea.tags-input input,
+textarea.tags-input button,
+select[multiple].cell-tag,
+select[multiple].tags-input input,
+select[multiple].tags-input button {
+  height: auto;
+}
+.cell-tag,
+.tags-input button {
+  padding: 0px 4px;
+}
+.cell-tag {
+  background-color: #fff;
+  white-space: nowrap;
+}
+.tags-input input[type=text]:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
 .completions {
   position: absolute;
   z-index: 110;
@@ -10657,16 +11820,28 @@ select[multiple].celltoolbar select {
 .completions select option.context {
   color: #286090;
 }
-#kernel_logo_widget {
-  float: right !important;
-  float: right;
-}
 #kernel_logo_widget .current_kernel_logo {
   display: none;
   margin-top: -1px;
   margin-bottom: -1px;
   width: 32px;
   height: 32px;
+}
+[dir="rtl"] #kernel_logo_widget {
+  float: left !important;
+  float: left;
+}
+.modal .modal-body .move-path {
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
+}
+.modal .modal-body .move-path .server-root {
+  padding-right: 20px;
+}
+.modal .modal-body .move-path .path-input {
+  flex: 1;
 }
 #menubar {
   box-sizing: border-box;
@@ -10688,11 +11863,41 @@ select[multiple].celltoolbar select {
 #menubar .navbar-collapse {
   clear: left;
 }
+[dir="rtl"] #menubar .navbar-toggle {
+  float: right;
+}
+[dir="rtl"] #menubar .navbar-collapse {
+  clear: right;
+}
+[dir="rtl"] #menubar .navbar-nav {
+  float: right;
+}
+[dir="rtl"] #menubar .nav {
+  padding-right: 0px;
+}
+[dir="rtl"] #menubar .navbar-nav > li {
+  float: right;
+}
+[dir="rtl"] #menubar .navbar-right {
+  float: left !important;
+}
+[dir="rtl"] ul.dropdown-menu {
+  text-align: right;
+  left: auto;
+}
+[dir="rtl"] ul#new-menu.dropdown-menu {
+  right: auto;
+  left: 0;
+}
 .nav-wrapper {
   border-bottom: 1px solid #e7e7e7;
 }
 i.menu-icon {
   padding-top: 4px;
+}
+[dir="rtl"] i.menu-icon.pull-right {
+  float: left !important;
+  float: left;
 }
 ul#help_menu li a {
   overflow: hidden;
@@ -10700,6 +11905,17 @@ ul#help_menu li a {
 }
 ul#help_menu li a i {
   margin-right: -1.2em;
+}
+[dir="rtl"] ul#help_menu li a {
+  padding-left: 2.2em;
+}
+[dir="rtl"] ul#help_menu li a i {
+  margin-right: 0;
+  margin-left: -1.2em;
+}
+[dir="rtl"] ul#help_menu li a i.pull-right {
+  float: left !important;
+  float: left;
 }
 .dropdown-submenu {
   position: relative;
@@ -10709,6 +11925,10 @@ ul#help_menu li a i {
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
+}
+[dir="rtl"] .dropdown-submenu > .dropdown-menu {
+  right: 100%;
+  margin-right: -1px;
 }
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -10727,11 +11947,23 @@ ul#help_menu li a i {
   margin-top: 2px;
   margin-right: -10px;
 }
+.dropdown-submenu > a:after.fa-pull-left {
+  margin-right: .3em;
+}
+.dropdown-submenu > a:after.fa-pull-right {
+  margin-left: .3em;
+}
 .dropdown-submenu > a:after.pull-left {
   margin-right: .3em;
 }
 .dropdown-submenu > a:after.pull-right {
   margin-left: .3em;
+}
+[dir="rtl"] .dropdown-submenu > a:after {
+  float: left;
+  content: "\f0d9";
+  margin-right: 0;
+  margin-left: -10px;
 }
 .dropdown-submenu:hover > a:after {
   color: #262626;
@@ -10748,6 +11980,10 @@ ul#help_menu li a i {
   float: right;
   z-index: 10;
 }
+[dir="rtl"] #notification_area {
+  float: left !important;
+  float: left;
+}
 .indicator_area {
   float: right !important;
   float: right;
@@ -10758,6 +11994,10 @@ ul#help_menu li a i {
   z-index: 10;
   text-align: center;
   width: auto;
+}
+[dir="rtl"] .indicator_area {
+  float: left !important;
+  float: left;
 }
 #kernel_indicator {
   float: right !important;
@@ -10775,6 +12015,12 @@ ul#help_menu li a i {
   padding-left: 5px;
   padding-right: 5px;
 }
+[dir="rtl"] #kernel_indicator {
+  float: left !important;
+  float: left;
+  border-left: 0;
+  border-right: 1px solid;
+}
 #modal_indicator {
   float: right !important;
   float: right;
@@ -10785,6 +12031,10 @@ ul#help_menu li a i {
   z-index: 10;
   text-align: center;
   width: auto;
+}
+[dir="rtl"] #modal_indicator {
+  float: left !important;
+  float: left;
 }
 #readonly-indicator {
   float: right !important;
@@ -10815,6 +12065,12 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f040";
 }
+.edit_mode .modal_indicator:before.fa-pull-left {
+  margin-right: .3em;
+}
+.edit_mode .modal_indicator:before.fa-pull-right {
+  margin-left: .3em;
+}
 .edit_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
 }
@@ -10829,6 +12085,12 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: ' ';
+}
+.command_mode .modal_indicator:before.fa-pull-left {
+  margin-right: .3em;
+}
+.command_mode .modal_indicator:before.fa-pull-right {
+  margin-left: .3em;
 }
 .command_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
@@ -10845,6 +12107,12 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f10c";
 }
+.kernel_idle_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_idle_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .kernel_idle_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -10859,6 +12127,12 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f111";
+}
+.kernel_busy_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_busy_icon:before.fa-pull-right {
+  margin-left: .3em;
 }
 .kernel_busy_icon:before.pull-left {
   margin-right: .3em;
@@ -10875,6 +12149,12 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f1e2";
 }
+.kernel_dead_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_dead_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
 .kernel_dead_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -10889,6 +12169,12 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f127";
+}
+.kernel_disconnected_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_disconnected_icon:before.fa-pull-right {
+  margin-left: .3em;
 }
 .kernel_disconnected_icon:before.pull-left {
   margin-right: .3em;
@@ -11279,27 +12565,46 @@ div#pager .ui-resizable-handle::after {
   flex: 1;
 }
 span.save_widget {
-  margin-top: 6px;
+  height: 30px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 50%;
+  flex: 1;
 }
 span.save_widget span.filename {
-  height: 1em;
+  height: 100%;
   line-height: 1em;
-  padding: 3px;
   margin-left: 16px;
   border: none;
   font-size: 146.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   border-radius: 2px;
 }
 span.save_widget span.filename:hover {
   background-color: #e6e6e6;
 }
+[dir="rtl"] span.save_widget.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] span.save_widget span.filename {
+  margin-left: 0;
+  margin-right: 16px;
+}
 span.checkpoint_status,
 span.autosave_status {
   font-size: small;
+  white-space: nowrap;
+  padding: 0 5px;
 }
 @media (max-width: 767px) {
   span.save_widget {
     font-size: small;
+    padding: 0 0 0 5px;
   }
   span.checkpoint_status,
   span.autosave_status {
@@ -11343,6 +12648,9 @@ span.autosave_status {
   margin-top: 0px;
   margin-left: 5px;
 }
+.toolbar-btn-label {
+  margin-left: 6px;
+}
 #maintoolbar {
   margin-bottom: -3px;
   margin-top: -8px;
@@ -11362,6 +12670,10 @@ span.autosave_status {
 }
 .select-xs {
   height: 24px;
+}
+[dir="rtl"] .btn-group > .btn,
+.btn-group-vertical > .btn {
+  float: right;
 }
 .pulse,
 .dropdown-menu > li > a.pulse,
@@ -11512,6 +12824,10 @@ ul.typeahead-list i {
   margin-left: -10px;
   width: 18px;
 }
+[dir="rtl"] ul.typeahead-list i {
+  margin-left: 0;
+  margin-right: -10px;
+}
 ul.typeahead-list {
   max-height: 80vh;
   overflow: auto;
@@ -11520,6 +12836,13 @@ ul.typeahead-list > li > a {
   /** Firefox bug **/
   /* see https://github.com/jupyter/notebook/issues/559 */
   white-space: normal;
+}
+ul.typeahead-list  > li > a.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .typeahead-list {
+  text-align: right;
 }
 .cmd-palette .modal-body {
   padding: 7px;
@@ -11531,10 +12854,19 @@ ul.typeahead-list > li > a {
   outline: none;
 }
 .no-shortcut {
-  display: none;
+  min-width: 20px;
+  color: transparent;
+}
+[dir="rtl"] .no-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .command-shortcut.pull-right {
+  float: left !important;
+  float: left;
 }
 .command-shortcut:before {
-  content: "(command)";
+  content: "(command mode)";
   padding-right: 3px;
   color: #777777;
 }
@@ -11543,6 +12875,10 @@ ul.typeahead-list > li > a {
   padding-right: 3px;
   color: #777777;
 }
+[dir="rtl"] .edit-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
 #find-and-replace #replace-preview .match,
 #find-and-replace #replace-preview .insert {
   background-color: #BBDEFB;
@@ -11550,6 +12886,12 @@ ul.typeahead-list > li > a {
   border-style: solid;
   border-width: 1px;
   border-radius: 0px;
+}
+[dir="ltr"] #find-and-replace .input-group-btn + .form-control {
+  border-left: none;
+}
+[dir="rtl"] #find-and-replace .input-group-btn + .form-control {
+  border-right: none;
 }
 #find-and-replace #replace-preview .replace .match {
   background-color: #FFCDD2;
@@ -11747,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11772,16 +13114,14 @@ div#notebook {
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Home-3:-Build-a-CNN-for-image-recognition.">Home 3: Build a CNN for image recognition.<a class="anchor-link" href="#Home-3:-Build-a-CNN-for-image-recognition.">&#182;</a></h1><h3 id="Name:-[Your-Name?]">Name: [Your-Name?]<a class="anchor-link" href="#Name:-[Your-Name?]">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="0.-You-will-do-the-following:">0. You will do the following:<a class="anchor-link" href="#0.-You-will-do-the-following:">&#182;</a></h2><ol>
 <li><p>Read, complete, and run my code.</p>
@@ -11797,7 +13137,7 @@ div#notebook {
 </li>
 <li><p>Submit the link to this .HTML file to Canvas.</p>
 <ul>
-<li>E.g., <a href="https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html">https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html</a></li>
+<li>Example: <a href="https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html">https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM3/cnn.html</a></li>
 </ul>
 </li>
 </ol>
@@ -11806,16 +13146,14 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="1.-Data-preparation">1. Data preparation<a class="anchor-link" href="#1.-Data-preparation">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="1.1.-Load-data">1.1. Load data<a class="anchor-link" href="#1.1.-Load-data">&#182;</a></h3>
 </div>
@@ -11823,7 +13161,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="k">import</span> <span class="n">cifar10</span>
@@ -11838,14 +13176,35 @@ div#notebook {
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of classes: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span> <span class="o">-</span> <span class="n">numpy</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>shape of x_train: (50000, 32, 32, 3)
+shape of y_train: (50000, 1)
+shape of x_test: (10000, 32, 32, 3)
+shape of y_test: (10000, 1)
+number of classes: 10
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="1.2.-One-hot-encode-the-labels">1.2. One-hot encode the labels<a class="anchor-link" href="#1.2.-One-hot-encode-the-labels">&#182;</a></h3><p>In the input, a label is a scalar in $\{0, 1, \cdots , 9\}$. One-hot encode transform such a scalar to a $10$-dim vector. E.g., a scalar <code>y_train[j]=3</code> is transformed to the vector <code>y_train_vec[j]=[0, 0, 0, 1, 0, 0, 0, 0, 0, 0]</code>.</p>
 <ol>
@@ -11860,12 +13219,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">to_one_hot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">num_class</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="o">&lt;</span><span class="n">fill</span> <span class="n">the</span> <span class="n">function</span><span class="o">&gt;</span>
-    <span class="o">...</span>
+    <span class="n">one_hot</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="n">num_class</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)):</span>
+        <span class="n">one_hot</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">one_hot</span>
 
 <span class="n">y_train_vec</span> <span class="o">=</span> <span class="n">to_one_hot</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_test_vec</span> <span class="o">=</span> <span class="n">to_one_hot</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
@@ -11877,14 +13238,34 @@ div#notebook {
 <span class="nb">print</span><span class="p">(</span><span class="n">y_train_vec</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Shape of y_train_vec: (50000, 10)
+Shape of y_test_vec: (10000, 10)
+[6]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Remark:-the-outputs-should-be">Remark: the outputs should be<a class="anchor-link" href="#Remark:-the-outputs-should-be">&#182;</a></h4><ul>
 <li>Shape of y_train_vec: (50000, 10)</li>
@@ -11897,8 +13278,7 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="1.3.-Randomly-partition-the-training-set-to-training-and-validation-sets">1.3. Randomly partition the training set to training and validation sets<a class="anchor-link" href="#1.3.-Randomly-partition-the-training-set-to-training-and-validation-sets">&#182;</a></h3><p>Randomly partition the 50K training samples to 2 sets:</p>
 <ul>
@@ -11911,12 +13291,15 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[136]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rand_indices</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="mi">50000</span><span class="p">)</span>
 <span class="n">train_indices</span> <span class="o">=</span> <span class="n">rand_indices</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">40000</span><span class="p">]</span>
 <span class="n">valid_indices</span> <span class="o">=</span> <span class="n">rand_indices</span><span class="p">[</span><span class="mi">40000</span><span class="p">:</span><span class="mi">50000</span><span class="p">]</span>
+
+<span class="c1"># train_indices = rand_indices[0:4000]</span>
+<span class="c1"># valid_indices = rand_indices[4000:5000]</span>
 
 <span class="n">x_val</span> <span class="o">=</span> <span class="n">x_train</span><span class="p">[</span><span class="n">valid_indices</span><span class="p">,</span> <span class="p">:]</span>
 <span class="n">y_val</span> <span class="o">=</span> <span class="n">y_train_vec</span><span class="p">[</span><span class="n">valid_indices</span><span class="p">,</span> <span class="p">:]</span>
@@ -11930,14 +13313,34 @@ div#notebook {
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shape of y_val: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">y_val</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Shape of x_tr: (40000, 32, 32, 3)
+Shape of y_tr: (40000, 10)
+Shape of x_val: (10000, 32, 32, 3)
+Shape of y_val: (10000, 10)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.-Build-a-CNN-and-tune-its-hyper-parameters">2. Build a CNN and tune its hyper-parameters<a class="anchor-link" href="#2.-Build-a-CNN-and-tune-its-hyper-parameters">&#182;</a></h2><ol>
 <li>Build a convolutional neural network model</li>
@@ -11952,8 +13355,7 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Remark:">Remark:<a class="anchor-link" href="#Remark:">&#182;</a></h3><p>The following CNN is just an example. You are supposed to make <strong>substantial improvements</strong> such as:</p>
 <ul>
@@ -11967,64 +13369,366 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[137]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Conv2D</span><span class="p">,</span> <span class="n">MaxPooling2D</span><span class="p">,</span> <span class="n">Flatten</span><span class="p">,</span> <span class="n">Dense</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Conv2D</span><span class="p">,</span> <span class="n">MaxPooling2D</span><span class="p">,</span> <span class="n">Flatten</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Add</span><span class="p">,</span> <span class="n">BatchNormalization</span><span class="p">,</span> <span class="n">Activation</span><span class="p">,</span> <span class="n">Dropout</span>
 <span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span>
 
 <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+<span class="c1"># model.add(Conv2D(32, (3, 3), activation=&#39;relu&#39;, padding=&#39;same&#39;, input_shape=(32, 32, 3)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">BatchNormalization</span><span class="p">())</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">))</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">))</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">))</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">))</span>
+<span class="c1"># model.add(MaxPooling2D((2, 2)))</span>
+
+<span class="c1"># model.add(Dropout(rate=0.5))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">))</span>
+<span class="c1"># model.add(Conv2D(256, (3, 3), activation=&#39;relu&#39;, padding=&#39;same&#39;))</span>
+<span class="c1"># model.add(MaxPooling2D((2, 2)))</span>
+
+<span class="c1"># model.add(Conv2D(256, (3, 3), activation=&#39;relu&#39;, padding=&#39;same&#39;))</span>
+<span class="c1"># model.add(Conv2D(256, (3, 3), activation=&#39;relu&#39;, padding=&#39;same&#39;))</span>
+<span class="c1"># model.add(MaxPooling2D((2, 2)))</span>
+
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Flatten</span><span class="p">())</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="c1"># model.add(Dense(256, activation=&#39;relu&#39;))</span>
+<span class="c1"># model.add(Dense(128, activation=&#39;relu&#39;))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="n">rate</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">BatchNormalization</span><span class="p">())</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
 
 <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_215 (Conv2D)          (None, 32, 32, 32)        2432      
+_________________________________________________________________
+batch_normalization_55 (Batc (None, 32, 32, 32)        128       
+_________________________________________________________________
+activation_47 (Activation)   (None, 32, 32, 32)        0         
+_________________________________________________________________
+conv2d_216 (Conv2D)          (None, 32, 32, 32)        9248      
+_________________________________________________________________
+max_pooling2d_87 (MaxPooling (None, 16, 16, 32)        0         
+_________________________________________________________________
+conv2d_217 (Conv2D)          (None, 16, 16, 64)        18496     
+_________________________________________________________________
+conv2d_218 (Conv2D)          (None, 16, 16, 64)        36928     
+_________________________________________________________________
+max_pooling2d_88 (MaxPooling (None, 8, 8, 64)          0         
+_________________________________________________________________
+conv2d_219 (Conv2D)          (None, 8, 8, 128)         73856     
+_________________________________________________________________
+conv2d_220 (Conv2D)          (None, 8, 8, 128)         147584    
+_________________________________________________________________
+conv2d_221 (Conv2D)          (None, 8, 8, 256)         295168    
+_________________________________________________________________
+flatten_37 (Flatten)         (None, 16384)             0         
+_________________________________________________________________
+dropout_22 (Dropout)         (None, 16384)             0         
+_________________________________________________________________
+dense_74 (Dense)             (None, 128)               2097280   
+_________________________________________________________________
+batch_normalization_56 (Batc (None, 128)               512       
+_________________________________________________________________
+activation_48 (Activation)   (None, 128)               0         
+_________________________________________________________________
+dense_75 (Dense)             (None, 10)                1290      
+=================================================================
+Total params: 2,682,922
+Trainable params: 2,682,602
+Non-trainable params: 320
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[140]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">optimizers</span>
 
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">1E-5</span> <span class="c1"># to be tuned!</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">5E-5</span> <span class="c1"># to be tuned!</span>
 
 <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span>
-              <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizers</span><span class="o">.</span><span class="n">RMSprop</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">),</span>
+<span class="c1">#               optimizer=optimizers.RMSprop(lr=learning_rate),</span>
+              <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">),</span>
               <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[141]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_tr</span><span class="p">,</span> <span class="n">y_tr</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_tr</span><span class="p">,</span> <span class="n">y_tr</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">))</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 40000 samples, validate on 10000 samples
+Epoch 1/100
+40000/40000 [==============================] - 129s 3ms/step - loss: 1.3863 - acc: 0.5087 - val_loss: 1.2391 - val_acc: 0.5610
+Epoch 2/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 1.1521 - acc: 0.5962 - val_loss: 1.0736 - val_acc: 0.6222
+Epoch 3/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 1.0078 - acc: 0.6492 - val_loss: 0.9947 - val_acc: 0.6520
+Epoch 4/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.8972 - acc: 0.6887 - val_loss: 0.9129 - val_acc: 0.6809
+Epoch 5/100
+40000/40000 [==============================] - 121s 3ms/step - loss: 0.8025 - acc: 0.7249 - val_loss: 0.9161 - val_acc: 0.6793
+Epoch 6/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.7278 - acc: 0.7517 - val_loss: 0.9540 - val_acc: 0.6709
+Epoch 7/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.6513 - acc: 0.7774 - val_loss: 0.8428 - val_acc: 0.7053
+Epoch 8/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.5846 - acc: 0.8029 - val_loss: 0.8924 - val_acc: 0.6933
+Epoch 9/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.5295 - acc: 0.8221 - val_loss: 0.8298 - val_acc: 0.7179
+Epoch 10/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.4690 - acc: 0.8441 - val_loss: 0.8300 - val_acc: 0.7184
+Epoch 11/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.4208 - acc: 0.8618 - val_loss: 0.8351 - val_acc: 0.7176
+Epoch 12/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.3763 - acc: 0.8784 - val_loss: 0.8123 - val_acc: 0.7238
+Epoch 13/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.3379 - acc: 0.8911 - val_loss: 0.7945 - val_acc: 0.7313
+Epoch 14/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.3031 - acc: 0.9026 - val_loss: 0.8045 - val_acc: 0.7388
+Epoch 15/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.2751 - acc: 0.9122 - val_loss: 0.7982 - val_acc: 0.7411
+Epoch 16/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.2448 - acc: 0.9229 - val_loss: 0.8472 - val_acc: 0.7312
+Epoch 17/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.2182 - acc: 0.9318 - val_loss: 0.8268 - val_acc: 0.7363
+Epoch 18/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.2001 - acc: 0.9372 - val_loss: 0.9013 - val_acc: 0.7215
+Epoch 19/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1888 - acc: 0.9404 - val_loss: 0.9267 - val_acc: 0.7176
+Epoch 20/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1727 - acc: 0.9475 - val_loss: 0.8608 - val_acc: 0.7361
+Epoch 21/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1600 - acc: 0.9494 - val_loss: 0.8580 - val_acc: 0.7415
+Epoch 22/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1518 - acc: 0.9526 - val_loss: 0.8456 - val_acc: 0.7437
+Epoch 23/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1388 - acc: 0.9577 - val_loss: 0.8967 - val_acc: 0.7376
+Epoch 24/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1305 - acc: 0.9598 - val_loss: 0.9309 - val_acc: 0.7339
+Epoch 25/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1235 - acc: 0.9607 - val_loss: 0.9585 - val_acc: 0.7312
+Epoch 26/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1140 - acc: 0.9642 - val_loss: 0.8728 - val_acc: 0.7501
+Epoch 27/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1151 - acc: 0.9639 - val_loss: 0.8947 - val_acc: 0.7468
+Epoch 28/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1055 - acc: 0.9679 - val_loss: 0.9111 - val_acc: 0.7508
+Epoch 29/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.1027 - acc: 0.9669 - val_loss: 0.8970 - val_acc: 0.7515
+Epoch 30/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.0974 - acc: 0.9695 - val_loss: 0.9903 - val_acc: 0.7339
+Epoch 31/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.0948 - acc: 0.9697 - val_loss: 0.9818 - val_acc: 0.7364
+Epoch 32/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0931 - acc: 0.9697 - val_loss: 0.9518 - val_acc: 0.7488
+Epoch 33/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.0885 - acc: 0.9717 - val_loss: 0.9146 - val_acc: 0.7536
+Epoch 34/100
+40000/40000 [==============================] - 122s 3ms/step - loss: 0.0815 - acc: 0.9751 - val_loss: 0.9533 - val_acc: 0.7470
+Epoch 35/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0862 - acc: 0.9722 - val_loss: 0.9738 - val_acc: 0.7409
+Epoch 36/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0791 - acc: 0.9737 - val_loss: 1.0245 - val_acc: 0.7355
+Epoch 37/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0797 - acc: 0.9747 - val_loss: 0.9599 - val_acc: 0.7508
+Epoch 38/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0746 - acc: 0.9762 - val_loss: 0.9808 - val_acc: 0.7458
+Epoch 39/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0778 - acc: 0.9748 - val_loss: 1.0035 - val_acc: 0.7422
+Epoch 40/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0705 - acc: 0.9778 - val_loss: 1.0203 - val_acc: 0.7443
+Epoch 41/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0707 - acc: 0.9782 - val_loss: 1.0112 - val_acc: 0.7433
+Epoch 42/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0667 - acc: 0.9782 - val_loss: 0.9586 - val_acc: 0.7539
+Epoch 43/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0678 - acc: 0.9793 - val_loss: 1.1041 - val_acc: 0.7328
+Epoch 44/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0673 - acc: 0.9779 - val_loss: 1.0385 - val_acc: 0.7423
+Epoch 45/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0634 - acc: 0.9794 - val_loss: 1.0261 - val_acc: 0.7519
+Epoch 46/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0656 - acc: 0.9787 - val_loss: 1.0285 - val_acc: 0.7474
+Epoch 47/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0627 - acc: 0.9797 - val_loss: 1.0636 - val_acc: 0.7433
+Epoch 48/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0632 - acc: 0.9798 - val_loss: 1.0658 - val_acc: 0.7412
+Epoch 49/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0573 - acc: 0.9818 - val_loss: 1.0697 - val_acc: 0.7386
+Epoch 50/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0587 - acc: 0.9807 - val_loss: 1.0757 - val_acc: 0.7441
+Epoch 51/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0573 - acc: 0.9815 - val_loss: 1.1729 - val_acc: 0.7373
+Epoch 52/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0577 - acc: 0.9811 - val_loss: 1.0212 - val_acc: 0.7524
+Epoch 53/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0563 - acc: 0.9817 - val_loss: 1.0058 - val_acc: 0.7507
+Epoch 54/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0574 - acc: 0.9815 - val_loss: 1.0380 - val_acc: 0.7498
+Epoch 55/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0518 - acc: 0.9834 - val_loss: 1.0232 - val_acc: 0.7581
+Epoch 56/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0540 - acc: 0.9824 - val_loss: 1.0380 - val_acc: 0.7530
+Epoch 57/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0493 - acc: 0.9836 - val_loss: 1.1169 - val_acc: 0.7378
+Epoch 58/100
+40000/40000 [==============================] - 123s 3ms/step - loss: 0.0492 - acc: 0.9843 - val_loss: 1.0812 - val_acc: 0.7506
+Epoch 59/100
+40000/40000 [==============================] - 121s 3ms/step - loss: 0.0517 - acc: 0.9830 - val_loss: 0.9872 - val_acc: 0.7631
+Epoch 60/100
+40000/40000 [==============================] - 121s 3ms/step - loss: 0.0504 - acc: 0.9831 - val_loss: 1.0688 - val_acc: 0.7473
+Epoch 61/100
+40000/40000 [==============================] - 121s 3ms/step - loss: 0.0486 - acc: 0.9837 - val_loss: 1.0471 - val_acc: 0.7532
+Epoch 62/100
+40000/40000 [==============================] - 121s 3ms/step - loss: 0.0450 - acc: 0.9859 - val_loss: 1.0086 - val_acc: 0.7550
+Epoch 63/100
+40000/40000 [==============================] - 121s 3ms/step - loss: 0.0473 - acc: 0.9842 - val_loss: 1.0920 - val_acc: 0.7435
+Epoch 64/100
+40000/40000 [==============================] - 120s 3ms/step - loss: 0.0457 - acc: 0.9856 - val_loss: 1.1644 - val_acc: 0.7433
+Epoch 65/100
+40000/40000 [==============================] - 120s 3ms/step - loss: 0.0508 - acc: 0.9830 - val_loss: 1.0362 - val_acc: 0.7550
+Epoch 66/100
+40000/40000 [==============================] - 120s 3ms/step - loss: 0.0481 - acc: 0.9848 - val_loss: 1.0775 - val_acc: 0.7543
+Epoch 67/100
+40000/40000 [==============================] - 120s 3ms/step - loss: 0.0438 - acc: 0.9863 - val_loss: 1.1501 - val_acc: 0.7476
+Epoch 68/100
+40000/40000 [==============================] - 124s 3ms/step - loss: 0.0446 - acc: 0.9851 - val_loss: 1.0702 - val_acc: 0.7569
+Epoch 69/100
+40000/40000 [==============================] - 126s 3ms/step - loss: 0.0443 - acc: 0.9860 - val_loss: 1.1469 - val_acc: 0.7489
+Epoch 70/100
+40000/40000 [==============================] - 127s 3ms/step - loss: 0.0449 - acc: 0.9855 - val_loss: 1.1033 - val_acc: 0.7505
+Epoch 71/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0384 - acc: 0.9877 - val_loss: 1.1000 - val_acc: 0.7518
+Epoch 72/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0449 - acc: 0.9846 - val_loss: 1.1235 - val_acc: 0.7505
+Epoch 73/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0384 - acc: 0.9880 - val_loss: 1.0537 - val_acc: 0.7627
+Epoch 74/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0409 - acc: 0.9872 - val_loss: 1.0882 - val_acc: 0.7642
+Epoch 75/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0401 - acc: 0.9867 - val_loss: 1.1240 - val_acc: 0.7523
+Epoch 76/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0431 - acc: 0.9861 - val_loss: 1.3489 - val_acc: 0.7301
+Epoch 77/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0390 - acc: 0.9869 - val_loss: 1.1112 - val_acc: 0.7565
+Epoch 78/100
+40000/40000 [==============================] - 134s 3ms/step - loss: 0.0433 - acc: 0.9860 - val_loss: 1.0768 - val_acc: 0.7543
+Epoch 79/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0403 - acc: 0.9867 - val_loss: 1.1208 - val_acc: 0.7522
+Epoch 80/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0398 - acc: 0.9868 - val_loss: 1.1311 - val_acc: 0.7529
+Epoch 81/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0369 - acc: 0.9874 - val_loss: 1.2734 - val_acc: 0.7395
+Epoch 82/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0377 - acc: 0.9881 - val_loss: 1.1279 - val_acc: 0.7647
+Epoch 83/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0396 - acc: 0.9867 - val_loss: 1.0838 - val_acc: 0.7590
+Epoch 84/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0381 - acc: 0.9883 - val_loss: 1.1182 - val_acc: 0.7534
+Epoch 85/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0373 - acc: 0.9879 - val_loss: 1.1281 - val_acc: 0.7559
+Epoch 86/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0407 - acc: 0.9869 - val_loss: 1.0521 - val_acc: 0.7674
+Epoch 87/100
+40000/40000 [==============================] - 132s 3ms/step - loss: 0.0337 - acc: 0.9890 - val_loss: 1.0884 - val_acc: 0.7671
+Epoch 88/100
+40000/40000 [==============================] - 133s 3ms/step - loss: 0.0372 - acc: 0.9874 - val_loss: 1.2363 - val_acc: 0.7524
+Epoch 89/100
+40000/40000 [==============================] - 134s 3ms/step - loss: 0.0351 - acc: 0.9884 - val_loss: 1.1033 - val_acc: 0.7529
+Epoch 90/100
+40000/40000 [==============================] - 134s 3ms/step - loss: 0.0340 - acc: 0.9886 - val_loss: 1.1438 - val_acc: 0.7581
+Epoch 91/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0343 - acc: 0.9889 - val_loss: 1.0679 - val_acc: 0.7510
+Epoch 92/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0335 - acc: 0.9894 - val_loss: 1.0943 - val_acc: 0.7557
+Epoch 93/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0341 - acc: 0.9888 - val_loss: 1.3861 - val_acc: 0.7192
+Epoch 94/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0360 - acc: 0.9878 - val_loss: 1.1119 - val_acc: 0.7575
+Epoch 95/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0378 - acc: 0.9874 - val_loss: 1.1051 - val_acc: 0.7634
+Epoch 96/100
+40000/40000 [==============================] - 134s 3ms/step - loss: 0.0290 - acc: 0.9908 - val_loss: 1.2376 - val_acc: 0.7404
+Epoch 97/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0325 - acc: 0.9896 - val_loss: 1.1351 - val_acc: 0.7577
+Epoch 98/100
+40000/40000 [==============================] - 134s 3ms/step - loss: 0.0362 - acc: 0.9876 - val_loss: 1.1635 - val_acc: 0.7504
+Epoch 99/100
+40000/40000 [==============================] - 135s 3ms/step - loss: 0.0350 - acc: 0.9884 - val_loss: 1.1978 - val_acc: 0.7582
+Epoch 100/100
+40000/40000 [==============================] - 134s 3ms/step - loss: 0.0297 - acc: 0.9905 - val_loss: 1.1806 - val_acc: 0.7625
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[142]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -12043,14 +13747,35 @@ div#notebook {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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xDoZnrCKZmOMMQEWFIwxxgRYUDDGGBNgQcEYY0yABQVjTEIYOnRotQfRJk+ezPjx42vcrpWvv7OvvvqKCy64IOQ6p5xyCrU1dZ88eTIlQR06nXnmmXz77beRJD2hWFAwxiSEMWPGMGPGjErLZsyYwZgxYyLa/ogjjuCll16q9/GrBoU5c+bQpk2beu8vXllQMMYkhAsuuIDXX389MKBOQUEBX331FSeffHLguYHs7Gz69OnDa6+9Vm37goICevfuDbguKEaPHk2PHj0499xzA11LAIwfPz7Q7fa9994LwJNPPslXX33F0KFDGTp0KACZmZls3boVgMcff5zevXvTu3fvQLfbBQUF9OjRg2uuuYZevXpx+umnVzqO3+zZsxk4cCD9+vXj1FNP5ZtvvgHcsxBXXnklffr0oW/fvoFuMt544w2ys7PJyspi+PDhUflug9lzCsaYurv5ZggxfkCDHHss+C6oobRr144BAwYwd+5cRo0axYwZM7jooosQEdLT03nllVc4+OCD2bp1K4MGDWLkyJFhh6b885//TIsWLVi9ejXLli0jOzs78NmkSZNo164dZWVlDB8+nGXLlnHjjTfy+OOPM2/ePDp06FBpX0uWLOGZZ57ho48+QlUZOHAgQ4YMoW3btqxdu5YXX3yRp556iosuuoiXX36ZSy+9tNL2J510EgsXLkRE+Nvf/sYjjzzC7373Ox544AFat27N8uXLAdixYwfFxcVcc801LFiwgK5du3rSP5LlFIwxCSO4CCm46EhV+fWvf03fvn059dRT2bRpU+COO5QFCxYELs59+/alb9++gc9mzpxJdnY2/fr1Y+XKlSE7uwv2wQcfcO6559KyZUtatWrFeeedx/vvvw9A165dOfbYY4Hw3XMXFRXxk5/8hD59+vDoo4+ycuVKAN5+++1Ko8C1bduWhQsXMnjwYLp27Qp407225RSMMXVXwx29l0aNGsUtt9zCxx9/TElJCf379wdcB3PFxcUsWbKEtLQ0MjMz69VN9RdffMFjjz3G4sWLadu2LVdccUWDurv2d7sNruvtUMVHEyZM4NZbb2XkyJG899573HffffU+XjSkRE4hLw8yM6FJE/eawmNyG5PQWrVqxdChQ7nqqqsqVTDv3LmTQw45hLS0NObNm0dhqMEcggwePJjp06cDsGLFCpYtWwa4brdbtmxJ69at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
+"
+>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="3.-Train-(again)-and-evaluate-the-model">3. Train (again) and evaluate the model<a class="anchor-link" href="#3.-Train-(again)-and-evaluate-the-model">&#182;</a></h2><ul>
 <li>To this end, you have found the "best" hyper-parameters. </li>
@@ -12062,8 +13787,7 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3.1.-Train-the-model-on-the-entire-training-set">3.1. Train the model on the entire training set<a class="anchor-link" href="#3.1.-Train-the-model-on-the-entire-training-set">&#182;</a></h3><p>Why? Previously, you used 40K samples for training; you wasted 10K samples for the sake of hyper-parameter tuning. Now you already know the hyper-parameters, so why not using all the 50K samples for training?</p>
 
@@ -12079,7 +13803,7 @@ div#notebook {
 <span class="o">...</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -12095,14 +13819,13 @@ div#notebook {
 <span class="o">...</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3.2.-Evaluate-the-model-on-the-test-set">3.2. Evaluate the model on the test set<a class="anchor-link" href="#3.2.-Evaluate-the-model-on-the-test-set">&#182;</a></h3><p>Do NOT used the test set until now. Make sure that your model parameters and hyper-parameters are independent of the test set.</p>
 
@@ -12119,7 +13842,20 @@ div#notebook {
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;accuracy = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">loss_and_acc</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
