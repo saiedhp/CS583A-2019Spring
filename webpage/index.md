@@ -1,7 +1,6 @@
 CS583: Deep Learning
 ============
 
-
 > Instructor: Shusen Wang
 
 > TA: Yao Xiao
@@ -48,144 +47,169 @@ Schedule
 
 - Jan 24, Lecture 1
 
-    -- Fundamental ML problems
+    * Fundamental ML problems
     
-    -- Regression
+    * Regression
     
-    -- Classification 
+    * Classification 
     
 - Jan 24, **Homework 0** is assigned.
 
-    -- [Click here for the assignment](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)
+    * [Click here for the assignment](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/HM0/HM.pdf)
     
-    -- Submission is not required. 
+    * Submission is not required. 
     
-    -- Deadline: finish it before the 1st Quiz. (Otherwise, you will probably fail.)
+    * Deadline: finish it before the 1st Quiz. (Otherwise, you will probably fail.)
     
 - Jan 24, **Homework 1** is assigned (available on Canvas).
     
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
 
 - Jan 31, **CANCELED** due to the instructor's conference traveling
 
 - Feb 7, Lecture 2
     
-    -- Classification (cont.)
+    * Classification (cont.)
     
-    -- Regularization
+    * Regularization
     
 - Feb 14, Lecture 3
     
-    -- Dimensionality reduction
+    * Dimensionality reduction
     
-    -- Matrix computations
+    * Matrix computations
     
-    -- Neural network basics
+    * Neural network basics
         
 - Feb 14, **Homework 2** is assigned (available on Canvas).
     
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
 
 - Feb 21, Lecture 4
 
-	-- Clustering
+	* Clustering
 	
-	-- Keras
+	* Keras
 	
-	-- Preparation for Quiz
+	* Preparation for Quiz
 	
-	-- Convolutional neural networks
+	* Convolutional neural networks
 
 - Feb 24, **Deadline for Homework 1**
 
 - Feb 28, **Quiz** (No lecture).
 
-	-- Coverage: linear algebra, optimization, and ML basics.
+	* Coverage: linear algebra, optimization, and ML basics.
 	
-	-- Policy: No electronic device. Printed material is allowed. 
+	* Policy: No electronic device. Printed material is allowed. 
 	
-	-- Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
-
-- Mar 7, **Deadline for project proposal**
-
-	-- Submission: submit to Canvas.
+	* Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Quiz1-Sample/Quiz.pdf)]
 
 - Mar 7, Lecture 5
 	
-	-- Convolutional neural networks (cont.)
+	* Convolutional neural networks (cont.)
 	
 - Mar 7, **Homework 3** is assigned
 	
-	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
 	
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
+    
+    
+- Extended to Mar 8 (originally Mar 7), **Deadline for project proposal**
+
+	* Submission: Everyone must submit a proposal to Canvas, even if it is teamwork.
+	
+	* The finally participated competition is supposed be the same as in the proposal. If otherwise, convincing explanation and evidence must be provided in the project document to avoid penalty.
+	
     
 - Mar 14, Lecture 6
 
-	-- Convolutional neural networks (cont.)
+	* Convolutional neural networks (cont.)
 	
-	-- Autoencoders
+	* Autoencoders
 	
 - Mar 14, **Deadline for Homework 2**
+
+- Mar 15, **Homework 4 and Homework 5** are assigned
+	
+	* Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
+	
+    * Submission: submit to Canvas.
 
 - Mar 21, Spring Break, no class
 
 - Mar 28, Lecture 7
-
-	-- Autoencoders (cont.)
 	
-	-- Recurrent neural networks
+	* Autoencoders (cont.)
+	
+	* Recurrent neural networks
 
 - Apr 4, Lecture 8
 
-	-- Recurrent neural networks (cont.)
-	
-- Apr 4, **Homework 4** is assigned
-	
-	-- Available at the course's repo [[click here](https://github.com/wangshusen/CS583A-2019Spring.git)]
-	
-    -- Submission: submit to Canvas.
+	* Recurrent neural networks (cont.)
     
 - Apr 7, **Deadline for Homework 3**
 
 - Apr 11, Lecture 9
 
-	-- Recurrent neural networks (cont.)
+	* Recurrent neural networks (cont.)
 	
-	-- Recommender system
+	* Optimization [[read this](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
 	
 - Apr 18, Lecture 10
 
-	-- Image generation
+	* Recommender system
+	
+	* Adversarial robustness
+	
+	* GANs
 	
 
 - Apr 21, **Deadline for signing up for project presentation**
 
-	-- Voluntary. 
+	* Voluntary. Up to 5 bonus scores to the total.
 	
-	-- Up to 5 bonus scores to the total.
-	
-    -- Submission: submit to Canvas.
-
+    * Submission: submit to Canvas.
+    
+    * Selected at most 7 teams.
+    
+    * Selection criteria: Is the problem challenging? Does your method have novelty? Do you have good preliminary results? Can the audience learn anything from your presentation?
 
 - Apr 25, Lecture 11
 
-	-- Image generation (cont.)
+	* Deep dream
 	
-- May 2, **Final Exam (Tentative)**
+	* Preparations for the final exam.
+	
+- May 2, **Final Exam**
 
-	-- Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, and RNN.
+	* Coverage: linear algebra, optimization, ML basics, neural network basics, CNN, RNN, Python programming, Keras, and content in the textbook. [[Click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Coverage/coverage.pdf)] for the list.
 	
-	-- Policy: No electronic device. Printed material is allowed. 
+	* Sample questions: [[click here](https://github.com/wangshusen/CS583A-2019Spring/blob/master/homework/Final-Sample/Final-Sample.pdf)]
+	
+	* Policy: No electronic device. Printed material is allowed. 
 	
 - May 4, **Deadline for Homework 4**
 
+- May 5, **Deadline for Homework 5**
+
+- May 9, 3:00 to 6:00 PM, **The Last Office Hours**
+
+	* Students can check their exam papers.
+
+- May 9, **Project Presentation**
+
+	* Time and location: the same as the class.
+	
+	* The selected groups are required to attend.
+	
+	* If you are confident that you will get A without the bonus, you can email the instructor to cancel your presentation. But the cancelation request must be made 48 hours prior to the presentation to avoid penalty.
+
 - May 19, **Deadline for Course Project**
 
-    -- Submission: submit to Canvas.
+    * Submission: submit to Canvas.
 
-
-- Some time between May 9-20, Project Presentation
 
 
 
@@ -195,122 +219,153 @@ Syllabus and Slides
 1. **Machine learning basics.**
 This part briefly introduces the fundamental ML problems-- regression, classification, dimensionality reduction, and clustering-- and the traditional ML models and numerical algorithms for solving the problems.
 
-    * ML basics. [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/1_ML_Basics.pdf)]
+    * ML basics. [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/1_ML_Basics.pdf)]
     
     * Regression. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_1.pdf)] 
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/2_Regression_2.pdf)]
+    [[slides-1](https://github.com/wangshusen/DeepLearning/blob/master/Slides/2_Regression_1.pdf)] 
+    [[slides-2](https://github.com/wangshusen/DeepLearning/blob/master/Slides/2_Regression_2.pdf)]
     
     * Classification. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_1.pdf)]
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_2.pdf)] 
-    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_3.pdf)] 
-    [[slides-4](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Classification_4.pdf)]
+    
+        - Logistic regression: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_1.pdf)] [[further reading](https://github.com/wangshusen/DeepLearning/blob/master/LectureNotes/Logistic/paper/logistic.pdf)]
+    
+        - SVM: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_2.pdf)] 
+    
+        - Softmax classifier: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_3.pdf)] 
+    
+        - KNN classifier: [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Classification_4.pdf)]
     
     * Regularizations. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Optimization.pdf)]
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/3_Regularizations.pdf)]
+    [[slides-1](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Optimization.pdf)]
+    [[slides-2](https://github.com/wangshusen/DeepLearning/blob/master/Slides/3_Regularizations.pdf)]
     
     * Clustering. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/4_Clustering.pdf)] 
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/4_Clustering.pdf)] 
     
     * Dimensionality reduction. 
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_1.pdf)] 
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_2.pdf)] 
+    [[slides-1](https://github.com/wangshusen/DeepLearning/blob/master/Slides/5_DR_1.pdf)] 
+    [[slides-2](https://github.com/wangshusen/DeepLearning/blob/master/Slides/5_DR_2.pdf)] 
     
     * Scientific computing libraries.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/5_DR_3.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/5_DR_3.pdf)]
+    
     
 2. **Neural network basics.**
 This part covers the multilayer perceptron, backpropagation, and deep learning libraries, with focus on Keras.
 
     * Multilayer perceptron and backpropagation. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_1.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/6_NeuralNet_1.pdf)]
     
     * Keras. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/6_NeuralNet_2.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/6_NeuralNet_2.pdf)]
     
     * Further reading:
-    [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
-    [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
-    [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
-    [[optimization algorithms](https://isaacchanghau.github.io/post/parameters_update/)]
+    
+        - [[activation functions](https://adl1995.github.io/an-overview-of-activation-functions-used-in-neural-networks.html)]
+    
+        - [[loss functions](https://isaacchanghau.github.io/post/loss_functions/)]
+    
+        - [[parameter initialization](https://isaacchanghau.github.io/post/weight_initialization/)]
+    
+        - [[optimization algorithms](https://isaacchanghau.github.io/post/parameters_update/)]
+    
     
 3. **Convolutional neural networks (CNNs).**
 This part is focused on CNNs and its application to computer vision problems.
 
     * CNN basics.
-    [[slides-1](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_1.pdf)]
-    [[slides-2](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_2.pdf)]
-    [[slides-3](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_3.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/7_CNN_1.pdf)]
+    
+    * Tricks for improving test accuracy.
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/7_CNN_2.pdf)]
+    
+    * Feature scaling and batch normalization.
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/7_CNN_3.pdf)]
     
     * Advanced topics on CNNs. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_4.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/7_CNN_4.pdf)]
     
     * Popular CNN architectures.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_5.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/7_CNN_5.pdf)]
     
     * Face recognition.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/7_CNN_6.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/7_CNN_6.pdf)]
     
     * Further reading: 
-    [style transfer (Section 8.1, Chollet's book)]
-    [visualize CNN (Section 5.4, Chollet's book)]
+    
+        - [style transfer (Section 8.1, Chollet's book)]
+        
+        - [visualize CNN (Section 5.4, Chollet's book)]
 
 
 4. **Autoencoders.**
 This part introduces autoencoders for dimensionality reduction and image generation.
 
     * Autoencoder for dimensionality reduction.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_1.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/8_AE_1.pdf)]
     
     * Variational Autoencoders (VAEs) for image generation. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/8_AE_2.pdf)]
-
-5. **More image generation methods.** **(Optional, depending on the progress.)**
-This part covers two image generation approaches in addition to VAE.
-The training of neural networks takes fixed images (X) as inputs and optimize w.r.t. the weights (W). Conversely, one can fix the network's weights (W) and optimize w.r.t. the input X. In this way, new images are generated to maximize (or minimize) some function; the application includes attacking neural networks and deep dream.
-Another very different approach is the generative adversarial network (GAN).
-
-    * Attack neural networks. 
-    
-    * Deep dream. 
-        
-    * Generative adversarial network (GAN). 
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/8_AE_2.pdf)]
 
 
-6. **Recurrent neural networks (RNNs).**
+5. **Recurrent neural networks (RNNs).**
 This part introduces RNNs and its applications in natural language processing (NLP).
 
     * Text processing.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_1.pdf)] 
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_1.pdf)] 
        
     * RNN basics and LSTM.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_2.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_2.pdf)]
     [[reference](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)]
    
     * Text generation.
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_3.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_3.pdf)]
     
     * Machine translation. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_4.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_4.pdf)]
+    
+    * Image caption generation. 
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_5.pdf)]
+    [[reference](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)]
     
     * Attention. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/10_RNN_5.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_6.pdf)]
     [[reference-1](https://distill.pub/2016/augmented-rnns/)]
     [[reference-2](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)]
     
+    * Transformer model: beyond RNNs. 
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/9_RNN_7.pdf)]
+    [[reference](https://arxiv.org/pdf/1706.03762.pdf)]
     
     * Further reading: 
-    [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
-    [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
+        
+        - [[GloVe: Global Vectors for Word Representation](http://www.aclweb.org/anthology/D14-1162)]
+        
+        - [[Neural Word Embedding as Implicit Matrix Factorization](https://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf)]
 
-7. **Recommender system.** **(Optional, depending on the progress.)**
+
+6. **Recommender system.** 
 This part is focused on the collaborative filtering approach to recommendation based on the user-item rating data.
 This part covers matrix completion methods and neural network approaches. 
 
     * Collaborative filtering. 
-    [[slides](https://github.com/wangshusen/CS583A-2019Spring/blob/master/slides/11_Recommender.pdf)]
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/10_Recommender.pdf)]
+
+
+7. **Adversarial Robustness.**
+This part introduces how to attack neural networks using adversarial examples and how to defend from the attack.
+
+	* White box attack and defend.
+    [[slides](https://github.com/wangshusen/DeepLearning/blob/master/Slides/11_Adversarial.pdf)]
+    
+    * Further reading:
+    [[Adversarial Robustness - Theory and Practice](https://adversarial-ml-tutorial.org/)]
+    
+    
+8. **Generative Adversarial Networks (GANs).** **(Optional, depending on the progress.)**
+
+
+
 
 
 Project
