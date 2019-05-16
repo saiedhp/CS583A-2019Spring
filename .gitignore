@@ -102,3 +102,13 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Project
+*test/
+*test/*
+*train/
+*train/*
+*weights/
+*.csv
+*.h5
+*Archive*/
